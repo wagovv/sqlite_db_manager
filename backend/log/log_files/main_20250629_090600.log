@@ -1,0 +1,11 @@
+2025-06-29 09:06:00,273 - INFO - main - Logger started, file: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\log\log_files\main_20250629_090600.log
+2025-06-29 09:06:02,950 - INFO - main - Listing databases: ['admin', 'dev', 'prod', 'test']
+2025-06-29 09:06:02,952 - INFO - main - Listing databases: ['admin', 'dev', 'prod', 'test']
+2025-06-29 09:06:02,955 - INFO - main - Schema fetched for DB 'admin'
+2025-06-29 09:06:02,961 - INFO - main - Schema fetched for DB 'admin'
+2025-06-29 09:06:03,507 - INFO - main - Fetching all approval requests
+2025-06-29 09:06:03,511 - INFO - main - Fetching all approval requests
+2025-06-29 09:06:04,445 - INFO - main - Listing databases: ['admin', 'dev', 'prod', 'test']
+2025-06-29 09:06:04,447 - INFO - main - Listing databases: ['admin', 'dev', 'prod', 'test']
+2025-06-29 09:06:04,449 - INFO - main - Schema fetched for DB 'admin'
+2025-06-29 09:06:04,455 - INFO - main - Schema fetched for DB 'admin'

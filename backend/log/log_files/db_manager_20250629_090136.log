@@ -1,0 +1,109 @@
+2025-06-29 09:01:36,445 - INFO - db_manager - Logger started, file: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\log\log_files\db_manager_20250629_090136.log
+2025-06-29 09:01:36,462 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,462 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,462 - DEBUG - db_manager - Executing SQL: CREATE TABLE IF NOT EXISTS user_permissions (username TEXT, permission TEXT, PRIMARY KEY(username,permission))
+2025-06-29 09:01:36,466 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,466 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,466 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,466 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','login')
+2025-06-29 09:01:36,467 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,467 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,467 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,467 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','select_env')
+2025-06-29 09:01:36,467 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,468 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,468 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,468 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','view_data')
+2025-06-29 09:01:36,468 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,468 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,468 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,468 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','apply_filters')
+2025-06-29 09:01:36,470 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,470 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,470 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,470 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','submit_for_approval')
+2025-06-29 09:01:36,470 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,471 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,471 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,471 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,471 - DEBUG - db_manager - Executing SQL: 
+        CREATE TABLE IF NOT EXISTS approval_requests (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user TEXT NOT NULL,
+            sql TEXT NOT NULL,
+            status TEXT NOT NULL DEFAULT 'pending',
+            submitted_at TEXT NOT NULL,
+            approved_by TEXT
+        )
+    
+2025-06-29 09:01:36,472 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,472 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,472 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,472 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,472 - DEBUG - db_manager - Executing SQL: CREATE TABLE IF NOT EXISTS user_permissions (username TEXT, permission TEXT, PRIMARY KEY(username,permission))
+2025-06-29 09:01:36,473 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,473 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,473 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,473 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','login')
+2025-06-29 09:01:36,473 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,473 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,473 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,473 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','select_env')
+2025-06-29 09:01:36,474 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,474 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,474 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,474 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','view_data')
+2025-06-29 09:01:36,474 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,474 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,474 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,474 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','apply_filters')
+2025-06-29 09:01:36,475 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,475 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,475 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,475 - DEBUG - db_manager - Executing SQL: INSERT OR IGNORE INTO user_permissions(username,permission) VALUES('test','submit_for_approval')
+2025-06-29 09:01:36,475 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,475 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:36,475 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,476 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:36,476 - DEBUG - db_manager - Executing SQL: 
+        CREATE TABLE IF NOT EXISTS approval_requests (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user TEXT NOT NULL,
+            sql TEXT NOT NULL,
+            status TEXT NOT NULL DEFAULT 'pending',
+            submitted_at TEXT NOT NULL,
+            approved_by TEXT
+        )
+    
+2025-06-29 09:01:36,476 - INFO - db_manager - Query executed and changes committed
+2025-06-29 09:01:36,476 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:43,010 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:43,010 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:43,011 - DEBUG - db_manager - Executing SQL: SELECT rowid AS _rowid_, * FROM approval_requests
+2025-06-29 09:01:43,011 - DEBUG - db_manager - Query returned 16 rows
+2025-06-29 09:01:43,011 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:43,179 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:43,179 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:43,179 - DEBUG - db_manager - Executing SQL: SELECT rowid AS _rowid_, id FROM approval_requests
+2025-06-29 09:01:43,180 - DEBUG - db_manager - Query returned 16 rows
+2025-06-29 09:01:43,180 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:43,698 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:43,698 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:43,699 - DEBUG - db_manager - Executing SQL: SELECT rowid AS _rowid_, user FROM approval_requests
+2025-06-29 09:01:43,699 - DEBUG - db_manager - Query returned 16 rows
+2025-06-29 09:01:43,699 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:44,059 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:44,059 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:44,060 - DEBUG - db_manager - Executing SQL: SELECT rowid AS _rowid_, status FROM approval_requests
+2025-06-29 09:01:44,060 - DEBUG - db_manager - Query returned 16 rows
+2025-06-29 09:01:44,060 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:44,443 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:44,444 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:44,444 - DEBUG - db_manager - Executing SQL: SELECT rowid AS _rowid_, approved_by FROM approval_requests
+2025-06-29 09:01:44,444 - DEBUG - db_manager - Query returned 16 rows
+2025-06-29 09:01:44,444 - DEBUG - db_manager - Database connection closed
+2025-06-29 09:01:50,760 - INFO - db_manager - DBHandler initialized with DB path: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:50,760 - DEBUG - db_manager - Opening connection to DB: C:\Users\Ariel Wagowsky\Desktop\Project leah\repo\backend\app\dbs\admin.db
+2025-06-29 09:01:50,762 - DEBUG - db_manager - Executing SQL: SELECT permission FROM user_permissions WHERE username='test'
+2025-06-29 09:01:50,762 - DEBUG - db_manager - Query returned 5 rows
+2025-06-29 09:01:50,762 - DEBUG - db_manager - Database connection closed
