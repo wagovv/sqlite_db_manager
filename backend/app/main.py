@@ -1,6 +1,6 @@
 from os import listdir
 from os.path import join, dirname
-from fastapi import FastAPI, HTTPException, Body
+from fastapi import FastAPI, HTTPException, Body, Query
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -37,7 +37,7 @@ class QueryInput(BaseModel):
 
 
 @app.post("/login")
-async def login(credentials):
+async def login(credentials=Body(...)):
     username = credentials.get("username")
     password = credentials.get("password")
     logger.info(f"Login attempt for user: {username}")
@@ -49,7 +49,7 @@ async def login(credentials):
 
 
 @app.post("/query")
-async def run_query(query):
+async def run_query(query: QueryInput):
     logger.info(f"User '{query.username}' executing query on DB '{query.db_name}': {query.sql}")
     handler = DBHandler(query.db_name)
     user_permissions = get_user_permissions(query.username)
@@ -85,7 +85,7 @@ def list_databases():
 
 
 @app.get("/schema")
-def schema(db_name):
+def schema(db_name: str = Query(...)):
     try:
         handler = DBHandler(db_name)
         schema = handler.get_schema()
@@ -104,7 +104,7 @@ def list_approval_requests_endpoint():
 
 
 @app.get("/export_json")
-def export_json(db_name, table_name):
+def export_json(db_name: str, table_name: str):
     try:
         handler = DBHandler(db_name)
         data = handler.execute(f"SELECT * FROM {table_name}")
