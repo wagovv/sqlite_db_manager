@@ -1,4 +1,4 @@
-# Frontend - Sagole SQLite Dashboard
+# Frontend - SQLite Dashboard
 
 ## Overview
 

@@ -57,7 +57,7 @@ export default function Login({ onLogin }: Props) {
         }}
       >
         <h2 style={{ marginBottom: 20, textAlign: "center" }}>
-          Login to Sagole SQLite Dashboard
+          Login to SQLite Dashboard
         </h2>
         <div style={{ marginBottom: 15 }}>
           <input

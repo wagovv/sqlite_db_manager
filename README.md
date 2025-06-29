@@ -1,8 +1,8 @@
-# Sagole SQLite Dashboard
+# SQLite Dashboard
 
 ## Project Overview
 
-Sagole SQLite Dashboard is a data management platform designed for Windows environments that enables users to execute SQL queries, manage user permissions, export data, and handle approval workflows for database modifications. It consists of a Python FastAPI backend and a React frontend.
+SQLite Dashboard is a data management platform designed for Windows environments that enables users to execute SQL queries, manage user permissions, export data, and handle approval workflows for database modifications. It consists of a Python FastAPI backend and a React frontend.
 
 ---
 

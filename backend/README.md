@@ -1,4 +1,4 @@
-# Backend - Sagole SQLite Dashboard
+# Backend - SQLite Dashboard
 
 ## Overview
 
