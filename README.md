@@ -58,17 +58,14 @@ repo/
 ## Installation & Setup
 
 ### Backend
-
-See [backend/README.md](./backend/README.md)
+[a relative link](backend/README.md)
 
 ### Frontend
-
-See [frontend/README.md](./frontend/README.md)
+[a relative link](frontend/README.md)
 
 ---
 
 ## Usage
-
 - Run backend server (FastAPI).
 - Run frontend React app.
 - Log in as `admin` or `guest` (password: `1234`).
@@ -79,12 +76,10 @@ See [frontend/README.md](./frontend/README.md)
 ---
 
 ## Contact
-
 **Ariel Wagowsky**  
 Email: ariel.wagowsky@gmail.com
 
 For questions or support, feel free to contact me.
 
 ---
-
-*Note: This project is tested and supported only on Windows OS.*
+Note: This project is tested and supported only on Windows OS.
